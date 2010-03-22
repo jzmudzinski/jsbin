@@ -1,4 +1,5 @@
-<?php include('app.php'); 
+<?php 
+include('app.php'); 
 if ($revision != 1 && $revision) {
   $code_id .= '/' . $revision;
 }
@@ -21,7 +22,7 @@ if ($code_id) {
       <a class="tab button preview group right gap" accesskey="2" href="#preview">Preview</a>
       <a title="Revert" class="button light group left enable" id="revert" href="#"><img class="enabled" src="/images/revert.png" /><img class="disabled" src="/images/revert-disabled.png" /></a>
     <?php if ($code_id) : ?>
-    <a class="button group light left" href="http://jsbin.com<?=$code_id?>">http://jsbin.com<?=$code_id?></a>
+    <a class="button group light left" href="http://jsbin.interfejs.dc2<?=$code_id?>">http://jsbin.interfejs.dc2<?=$code_id?></a>
     <?php else : ?>
     <a id="save" class="button save group right left" href="/save">Create public link</a>
     <?php endif ?>
